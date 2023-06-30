@@ -13,23 +13,23 @@ By [Jia Ning](https://scholar.google.com/citations?user=hW0AexsAAAAJ&hl=en)\*, [
 ### Results on COCO instance segmentation
 | <div style="width: 100pt"> Model | Box AP| Mask AP| VQ-VAE Model | Task-Solver Model|
 |:-------------------:|:-------:|:-------:|:-------:|:-------:|
-| [AiT(SwinV2-B)](ait/configs/swinv2b_640reso_inssegonly.py) | 43.3 | 34.2 | [vqvae_insseg.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_insseg.pt) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_insseg_swinv2b.pth)|
-| [AiT(SwinV2-B) w/o soft token](ait/configs/swinv2b_640reso_inssegonly_wosoft.py) | 43.6 | 31.1(-3.1) | [vqvae_insseg.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_insseg.pt) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_insseg_swinv2b_wosoft.pth) |
+| [AiT(SwinV2-B)](ait/configs/swinv2b_640reso_inssegonly.py) | 43.3 | 34.2 | [vqvae_insseg.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_insseg.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_insseg_swinv2b.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D)|
+| [AiT(SwinV2-B) w/o soft token](ait/configs/swinv2b_640reso_inssegonly_wosoft.py) | 43.6 | 31.1(-3.1) | [vqvae_insseg.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_insseg.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_insseg_swinv2b_wosoft.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) |
 
 
 ### Results on NYUv2 depth estimation
 | <div style="width: 100pt"> Model</div> | D1 | D2 | D3 | Abs Rel | RMSE | Log10 | VQ-VAE <br> Model | Task-Solver <br> Model |
 |:-------------------:|:-------:|:-------:|:--------:|:--------:|:--------:|:-------:|:-------:|:-------:|
-| [AiT(SwinV2-B)](ait/configs/swinv2b_480reso_depthonly.py) | 0.934 | 0.991 | 0.998 | 0.087 | 0.305 | 0.037 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt) |[model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2b_ar.pth) |
-| [AiT-P(SwinV2-B)](ait/configs/swinv2b_480reso_parallel_depthonly.py) | 0.940 | 0.992 | 0.998 | 0.085 | 0.301 | 0.036 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2b_parallel.pth) |
-| [AiT(SwinV2-B) w/o soft token](ait/configs/swinv2b_480reso_depthonly_wosoft.py) | 0.932 | 0.991 | 0.998 | 0.089 | 0.318 | 0.038 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2b_ar_wosoft.pth) |
-| [AiT(SwinV2-L)](ait/configs/swinv2l_480reso_depthonly.py) | 0.949 | 0.993 | 0.999 | 0.079 | 0.284 | 0.034 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt) |[model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2l_ar.pth) |
-| [AiT-P(SwinV2-L)](ait/configs/swinv2l_480reso_parallel_depthonly.py) | 0.954 | 0.994 | 0.999 | 0.076 | 0.275 | 0.033 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2l_parallel.pth) |
+| [AiT(SwinV2-B)](ait/configs/swinv2b_480reso_depthonly.py) | 0.934 | 0.991 | 0.998 | 0.087 | 0.305 | 0.037 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) |[model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2b_ar.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) |
+| [AiT-P(SwinV2-B)](ait/configs/swinv2b_480reso_parallel_depthonly.py) | 0.940 | 0.992 | 0.998 | 0.085 | 0.301 | 0.036 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2b_parallel.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) |
+| [AiT(SwinV2-B) w/o soft token](ait/configs/swinv2b_480reso_depthonly_wosoft.py) | 0.932 | 0.991 | 0.998 | 0.089 | 0.318 | 0.038 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2b_ar_wosoft.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) |
+| [AiT(SwinV2-L)](ait/configs/swinv2l_480reso_depthonly.py) | 0.949 | 0.993 | 0.999 | 0.079 | 0.284 | 0.034 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) |[model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2l_ar.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) |
+| [AiT-P(SwinV2-L)](ait/configs/swinv2l_480reso_parallel_depthonly.py) | 0.954 | 0.994 | 0.999 | 0.076 | 0.275 | 0.033 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_depth_swinv2l_parallel.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) |
 
 ### Joint training results on COCO and NYUv2
 | <div style="width: 100pt"> Model</div> | Box AP| Mask AP| RMSE | VQ-VAE Model | Task-Solver <br> Model |
 |:-------------------:|:-------:|:-------:|:-------:|:-------:|:-------:|
-| [AiT(SwinV2-B)](ait/configs/swinv2b_640reso_joint.py) | 42.2 | 34.1 | 0.310 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt)/[vqvae_insseg.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_insseg.pt)  | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_joint_swinv2b.pth)|
+| [AiT(SwinV2-B)](ait/configs/swinv2b_640reso_joint.py) | 42.2 | 34.1 | 0.310 | [vqvae_depth.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_depth.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D)/[vqvae_insseg.pt](https://msravcghub.blob.core.windows.net/ait-release/vae/vqvae_insseg.pt?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D)  | [model](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_joint_swinv2b.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D)|
 
 
 ## Usage
@@ -41,7 +41,7 @@ git clone https://github.com/bowenc0221/boundary-iou-api && cd boundary-iou-api 
 ```
 
 ### Data/Pre-training model Preparation 
-1. Download the [NYU Depth V2](https://github.com/vinvino02/GLPDepth) dataset, [COCO](https://cocodataset.org/#download) datasets, our preprocess box-cropped binary instance masks, named [maskcoco](https://msravcghub.blob.core.windows.net/ait-release/data/maskcoco.tar), and organize the data according to the following directory structure:
+1. Download the [NYU Depth V2](https://github.com/vinvino02/GLPDepth) dataset, [COCO](https://cocodataset.org/#download) datasets, our preprocess box-cropped binary instance masks, named [maskcoco](https://msravcghub.blob.core.windows.net/ait-release/data/maskcoco.tar?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D), and organize the data according to the following directory structure:
 
 ```plain
 AiT
@@ -63,7 +63,7 @@ ln -s data ait/data
 ln -s data vae/data
 ```
 
-3. Download pre-trained backbone models [swin_v2_base_densesimmim.pth](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/swin_v2_base_densesimmim.pth) and [swin_v2_large_densesimmim.pth](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/swin_v2_large_densesimmim.pth). 
+3. Download pre-trained backbone models [swin_v2_base_densesimmim.pth](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/swin_v2_base_densesimmim.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D) and [swin_v2_large_densesimmim.pth](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/swin_v2_large_densesimmim.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D). 
 
 
 ### Training
@@ -96,7 +96,7 @@ cd ait
 python -m torch.distributed.launch --nproc_per_node=16 --nnodes=2 --node_rank=${NODE_RANK} --master_addr=${MASTER_ADDR} --master_port=${MASTER_PORT} code/train.py configs/swinv2b_640reso_detonly.py --cfg-options model.backbone.init_cfg.checkpoint=swin_v2_base_densesimmim.pth
 ```
 
-**Note:** We use the pre-trainined object detection model to initialize the instance segmentation models and joint-training models to save training cost, please download the pre-trained model ([ait_det_swinv2b_wodec.pth](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_det_swinv2b_wodec.pth)) before training on instance segmentation and joint training setting.
+**Note:** We use the pre-trainined object detection model to initialize the instance segmentation models and joint-training models to save training cost, please download the pre-trained model ([ait_det_swinv2b_wodec.pth](https://msravcghub.blob.core.windows.net/ait-release/checkpoint/ait_det_swinv2b_wodec.pth?sv=2021-10-04&spr=https%2Chttp&st=2023-06-30T01%3A47%3A00Z&se=2026-01-01T01%3A47%3A00Z&sr=c&sp=rl&sig=bwb8Tpfpk2FfZxsilGa4Oc5vKEZiifZK4xs%2F6RuWF9E%3D)) before training on instance segmentation and joint training setting.
 
 #### Training task-solver on instance segmentation
 ```bash
